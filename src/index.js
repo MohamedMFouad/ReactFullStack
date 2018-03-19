@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App'
+
 
 ReactDOM.render(
-  <h2 className="text-center">
-    Hello React with JSX!!
-  </h2>,
+<App headerMassage="dsadasd"/> ,
   document.getElementById('root')
 );
