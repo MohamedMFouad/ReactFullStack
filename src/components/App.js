@@ -2,14 +2,28 @@ import Header from './Header'
 import React from'react'
 
  
-const App = () => {
-  return(
-     <div className="App">
-       <Header massage="Naming Contests" />
-         <div>
-          ...
-        </div>
-      </div>  
-  );
+class App extends  React.Component{
+    state ={
+        pageHeader :'React'
+    }
+   componentDidMount(){
+       console.log('CDM');
+       debugger;
+   }
+   componentWillUnmount(){
+       console.log("unmounted");
+       debugger;
+   }
+   
+    render(){
+        return(
+            <div className="App">
+              <Header massage={this.state.pageHeader} />
+                <div>
+                 ...---
+               </div>
+             </div>  
+         );
+    }
 };
 export default App;
